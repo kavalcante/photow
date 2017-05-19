@@ -40,7 +40,7 @@ export default {
       this.uploadPhoto(ref, this.$refs.webcam.getPhoto())
       .then(() => this.getUrl(path))
       .then(url => this.addPhoto(url, path))
-      .then(res => console.log(res));
+      .catch(error => console.log(error));
     },
 
     generatePath() {
