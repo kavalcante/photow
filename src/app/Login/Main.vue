@@ -1,11 +1,15 @@
 <template>
 <section class="bg-background">
-  <div class="login-wrapper">
-    <button class="btn-login" @click="login()">
-      <i class="fa fa-google" aria-hidden="true"></i>
-      Login with Google
-    </button>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 login-wrapper">
+      <button class="btn-login" @click="login()">
+        <i class="fa fa-google" aria-hidden="true"></i>
+        Login with Google
+      </button>
+    </div>
   </div>
+</div>
 </section>
 </template>
 
