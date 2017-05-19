@@ -4,12 +4,6 @@
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <router-link class="brand" to="/home">
             <img src="/static/logo.png" alt="Photow" class="app-logo">
             <span class="app-name">Photow</span>
@@ -17,12 +11,10 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><img :src="currentUser.photoURL" class="img-circle" style="margin-top: .4rem" width="40" height="40"></li>
-            <li><button @click="logout()" class="btn btn-link">Sair</button></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><img :src="currentUser.photoURL" class="img-circle" style="margin-top: .4rem" width="40" height="40"></li>
+          <li><button @click="logout()" class="btn btn-link">Sair</button></li>
+        </ul>
       </div><!-- /.container-fluid -->
     </nav>
   </header>
@@ -56,8 +48,28 @@ export default {
   color: #FFF;
 }
 
+@media screen and (max-width: 768px) {
+  .brand {
+    padding: 1rem;
+  }
+
+  .navbar-header {
+    margin-top: 2rem;
+  }
+}
+
 .navbar-header {
   margin-top: 1rem;
+  display: inline-block;
+}
+
+.navbar-nav {
+  float: right;
+  display: inline-block;
+}
+
+.navbar-nav li {
+  display: inline-block;
 }
 
 .app-logo {

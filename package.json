@@ -1,6 +1,6 @@
 {
   "name": "photow",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "Realtime Web app made with Vue.js and the awesome Firebase to take photos from webcam",
   "author": "João Cavalcante <contato@kavalcante.com>",
   "private": true,
