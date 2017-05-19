@@ -1,0 +1,38 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/bin/node /usr/bin/firebase deploy
+[debug] CLI Version:  3.9.0
+[debug] Platform:     linux
+[debug] Node Version: v6.10.0
+[debug] Time:         Thu May 18 2017 23:14:35 GMT-0300 (-03)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/BG1MlEEHWvNUdPjz-_MhlbXVtfPt46330EfgE9-5a4I',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu May 18 2017 23:14:35 GMT-0300 (-03)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/vue-photow  
+ Thu May 18 2017 23:14:36 GMT-0300 (-03)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/vue-photow/tokens  
+ Thu May 18 2017 23:14:38 GMT-0300 (-03)
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'vue-photow'...
+[info] 
+[debug] TypeError: targetNames.join is not a function
+    at deploy (/usr/lib/node_modules/firebase-tools/lib/deploy/index.js:68:57)
+    at Command._action (/usr/lib/node_modules/firebase-tools/commands/deploy.js:47:12)
+    at /usr/lib/node_modules/firebase-tools/lib/command.js:176:29
+    at tryCatch (/usr/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:539:12)
+    at invokeCallback (/usr/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:554:13)
+    at publish (/usr/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:522:7)
+    at flush (/usr/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:2414:5)
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+[error] 
+[error] Error: An unexpected error has occurred.

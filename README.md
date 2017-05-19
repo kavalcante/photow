@@ -4,7 +4,7 @@ Realtime Web app made with Angular 1 and the awesome Firebase to take photos fro
 ![photow](https://cloud.githubusercontent.com/assets/5286092/18990001/914bf704-86e5-11e6-9c7c-b8ddd73aa238.png)
 
 #Instructions to run
-This project runs with Gulp, and some node dependencies.
+This project runs with webpack, and some node dependencies.
 The first thing that you have to do is `npm install` in the root folder, after hit `enter`, go drink a coffee, and when you come back, all the things should be downloaded and read to go.
 
 #Setting up firebase SDK
@@ -21,12 +21,24 @@ var config = {
 firebase.initializeApp(config);
 ```
 
-You just need to replace the `config/config.js` file with the infos.
+## Build Setup
 
-**This project have some commands that you need to know:**
+``` bash
+# install dependencies
+npm install
 
-`gulp serve` to launch a browser sync server on your source files
-`gulp build` to build an optimized version of your application in /dist
-`gulp test` to launch your unit tests with Karma
-`gulp test:auto` to launch your unit tests with Karma in watch mode
+# serve with hot reload at localhost:8080
+npm run dev
 
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run all tests
+npm test
+```
