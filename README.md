@@ -1,7 +1,5 @@
 # Photow
-Realtime Web app made with Angular 1 and the awesome Firebase to take photos from webcam 🔥
-
-![photow](https://cloud.githubusercontent.com/assets/5286092/18990001/914bf704-86e5-11e6-9c7c-b8ddd73aa238.png)
+Realtime Web app made with Vue.js and the awesome Firebase to take photos from webcam 🔥
 
 #Instructions to run
 This project runs with webpack, and some node dependencies.
@@ -12,7 +10,7 @@ First, you have to configure the firebase keys that you can get in the dashoboar
 
 ```
 // Initialize the Firebase SDK
-var config = {
+const config = {
   apiKey: '<your-api-key>',
   authDomain: '<your-auth-domain>',
   databaseURL: '<your-database-url>',
@@ -20,6 +18,8 @@ var config = {
 };
 firebase.initializeApp(config);
 ```
+
+Just replace then into `firebase.js` file, located [here](https://github.com/kavalcante/photow/blob/master/src/firebase.js).
 
 ## Build Setup
 
